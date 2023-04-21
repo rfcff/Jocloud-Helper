@@ -252,10 +252,11 @@ public class VideoSameChannelActivity extends BaseActivity implements View.OnCli
 
         //set thunder Video Encoder Config
         //设置开播视频的编码配置
-        ThunderVideoEncoderConfiguration configuration = new ThunderVideoEncoderConfiguration();
-        configuration.publishMode = ThunderRtcConstant.ThunderPublishVideoMode.THUNDERPUBLISH_VIDEO_MODE_NORMAL;
-        configuration.playType = ThunderRtcConstant.ThunderPublishPlayType.THUNDERPUBLISH_PLAY_INTERACT;
-        FacadeRtcManager.getInstance().setVideoEncoderConfig(configuration);
+//        ThunderVideoEncoderConfiguration configuration = new ThunderVideoEncoderConfiguration();
+//        configuration.publishMode = ThunderRtcConstant.ThunderPublishVideoMode.THUNDERPUBLISH_VIDEO_MODE_NORMAL;
+//        configuration.playType = ThunderRtcConstant.ThunderPublishPlayType.THUNDERPUBLISH_PLAY_INTERACT;
+//        FacadeRtcManager.getInstance().setVideoEncoderConfig(configuration);
+        FacadeRtcManager.getInstance().setVideoEncoderParam();
 
         //set thunder media mode
         //设置媒体模式

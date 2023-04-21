@@ -21,6 +21,7 @@ import com.thunder.livesdk.ThunderNotification;
 import com.thunder.livesdk.ThunderRtcConstant;
 import com.thunder.livesdk.ThunderVideoCanvas;
 import com.thunder.livesdk.ThunderVideoEncoderConfiguration;
+import com.thunder.livesdk.ThunderVideoEncoderParam;
 import com.thunder.livesdk.video.ThunderPlayerView;
 import com.thunder.livesdk.video.ThunderPreviewView;
 
@@ -228,6 +229,16 @@ public class FacadeRtcManager {
         vConfig.playType = ThunderRtcConstant.ThunderPublishPlayType.THUNDERPUBLISH_PLAY_INTERACT;
         thunderLogD("setVideoEncoderConfig setVideoEncoderConfig");
         thunderEngine.setVideoEncoderConfig(vConfig);
+    }
+
+    public void setVideoEncoderParam() {
+        ThunderVideoEncoderParam vParam = new ThunderVideoEncoderParam();
+        vParam.width = 540;
+        vParam.height = 960;
+        vParam.frameRate = 15;
+        vParam.bitrate = 1450;
+        thunderLogD("setVideoEncoderParameters vParam:" + vParam.toString());
+        thunderEngine.setVideoEncoderParameters(vParam, null);
     }
 
     /**

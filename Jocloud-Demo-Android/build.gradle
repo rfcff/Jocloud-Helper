@@ -8,7 +8,10 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven { url "http://nexus.jocloud.com:8081/nexus/content/groups/public/" }
+        // 内网
+        maven { url "https://nexus-android.duowan.com/nexus/content/groups/public" }
+        // 外网
+        // maven { url "http://maven.joyyinc.com/nexus/content/repositories/releases" }
 
     }
     dependencies {
@@ -24,7 +27,10 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "http://nexus.jocloud.com:8081/nexus/content/groups/public/" }
+        // 内网
+        maven { url "https://nexus-android.duowan.com/nexus/content/groups/public" }
+        // 外网
+        // maven { url "http://maven.joyyinc.com/nexus/content/repositories/releases" }
     }
 }
 

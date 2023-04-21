@@ -40,9 +40,9 @@ dependencies {
 
     if (isThunderBolt) {
         //todo 2.9.10 的视频库外网marven还没有，有了在升级
-        api "com.rtc.thunder:thunderbolt:2.8.6"
+        api "com.rtc.thunder:thunderbolt-fullvideo:3.10.1"
     } else {
-        api "com.rtc.thunder:thunder:2.8.0"
+        api "com.rtc.thunder:thunder:3.10.1"
     }
     implementation 'com.squareup.okhttp3:okhttp:4.7.2'
 }
